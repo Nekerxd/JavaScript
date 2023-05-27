@@ -1,0 +1,25 @@
+ul li::before{
+    content: ' > ';
+    background: paleturquoise;
+    color: white;
+}
+
+p::first-letter {
+    font-size: 40px;
+    float: left;
+    display: block;
+    margin: 0 10px 10px 0;
+}
+p::first-line {
+    background: lightgreen;
+}
+
+p::selection {
+    background: rgb(255, 255, 123);
+}
+
+input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(197, 197, 197);
+    font-style: italic;
+}

@@ -1,0 +1,28 @@
+/* Possui valor especifico */
+[meu-atributo~="valor2"] {
+    color: red;
+}
+/* Possui meuatributo="valor-algumacoisa" */
+[meu-atributo|="valor"] {
+    color: rgb(72, 255, 0);
+}
+/* Começa com */
+[meu-atributo^="valor-1"] {
+    color: rgb(211, 214, 25);
+}
+/* Termina com */
+[meu-atributo$="r-9"] {
+    color: rgb(25, 31, 214);
+}
+/* Contém */
+[meu-atributo*="or-6"] {
+    color: rgb(195, 14, 195);
+}
+/* Possuir valor exato */
+[meu-atributo="2 6 7"] {
+    color: rgb(249, 134, 3);
+}
+/* Possuir atributo */
+[outro-atributo] {
+    color: aquamarine;
+}

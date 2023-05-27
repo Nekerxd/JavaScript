@@ -1,0 +1,62 @@
+.mouse {
+    transition: all 200ms ease-in-out;
+}
+
+.mouse:hover {
+    color: red;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: deepskyblue;
+}
+
+a:active {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input:disabled {
+    background: rgb(255, 146, 146);
+    cursor: not-allowed;
+}
+
+input:checked {
+    width: 25px;
+    height: 25px;
+}
+
+.pai .lista li:last-child {
+    background: lightgreen;
+}
+
+.pai .lista li:first-child {
+    background: lightblue;
+}
+
+.paragrafo p:not(.meio) {
+    background: lightseagreen;
+}
+
+.listagem li:nth-child(even) {
+    background: plum;
+}
+
+.listagem li:nth-child(odd) {
+    background: gray;
+}
+
+.listagem li:nth-child(3n) {
+    background: yellow;
+}
+.listagem li:nth-child(5n+9) {
+    background: blue;
+}

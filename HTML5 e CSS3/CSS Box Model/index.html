@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CSS Box Model</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .tamanho {
+                width: 200px;
+                height: 150px;
+            }
+
+            .section-one {
+                background: rgb(255, 170, 215);
+                border-bottom:  10px solid yellow;
+                border-right:  5px solid lime;
+                border-left:  15px solid blue;
+                border-top: 1px solid red;
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            .section-two {
+                padding: 10px 5px 7px 15px;
+                margin: 40px 20px;
+                background: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="tamanho section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis esse autem inventore dolor.</section>
+        <section class="tamanho section-two">Earum recusandae optio, perferendis necessitatibus sint dolor porro, nam non inventore aut eveniet qui vitae enim perspiciatis quidem amet! Maxime, aliquid minima.</section>
+    </body>
+</html>

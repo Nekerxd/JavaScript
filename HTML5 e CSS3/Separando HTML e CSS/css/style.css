@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background: rgb(242, 241, 241);
+}
+
+body div section p,
+body div section h1 {
+    font-size: 20px;
+}
+
+.color-aqua {
+    color: rgb(53, 205, 3);
+}
+
+.color-aqua .heading2 {
+    font-style: italic;
+}
+.color-aqua h2.heading2 {
+    font-weight: bold;
+}
+
+.margin {
+    margin-bottom: 50px;
+}
+
+div {
+    color: initial;
+    font-size: 20px;
+}
+
+.pai .filha{
+}
+
+/* Seleciona elemento com ambas */
+.pai.filha{
+    color: pink;
+}
+
+/* Seleciona filhos diretos */
+.pai > .filha {
+    color: blue;
+}
+
+/* Seleciona filhos de filhos */
+.pai > .filha > .filhadafilha {
+    color: red;
+}
+
+/* Seleciona P diretamente depois de h1 */
+.pai h1+p {
+    color: violet;
+}
+
+.um, .dois {
+    font-size: 30px;
+}
+
+/* Seleciona todos os Dois após um Um dentro de um Pai */
+.pai .um~.dois {
+    color: violet;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=fullice-width, initial-scale=1.0">
+    <title>Formulários</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <h1>Tipos de Inputs</h1>
+            <p>Desenvolvendo Formulários</p>
+
+            <fieldset>
+                <legend>Inputs</legend>
+                <p>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite algo" required>
+                </p>
+                
+                <p>
+                    <input type="checkbox" name="full" id="full">
+                    <label for="full">Fullstack</label><br>
+                    <input type="checkbox" name="front" id="front">
+                    <label for="front">Front-end</label><br>
+                    <input type="checkbox" name="back" id="back">
+                    <label for="back">Back-end</label><br>
+                </p>
+
+                <p>
+                    Sexo:<br>
+                    <input type="radio" name="sexo" id="feminino" value="Feminino">
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" name="sexo" id="masculino" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                </p>
+
+                <p>
+                    <label for="date">Data: </label>
+                    <input type="date" name="date" id="date">
+                </p>
+                <p>
+                    <label for="time">Hora: </label>
+                    <input type="time" name="time" id="time">
+                </p>
+                <p>
+                    <label for="datetime">Data e Hora: </label>
+                    <input type="datetime-local" name="datetime" id="datetime">
+                </p>
+                <p>
+                    <label for="cor">Cor: </label>
+                    <input type="color" name="cor" id="cor">
+                </p>
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="ex.: email@gmail.com">
+                </p>
+                <p>
+                    <label for="file">Arquivo: </label>
+                    <input type="file" name="file" id="file" accept=".png, .svg, image/*" multiple>
+                </p>
+                
+                <p>
+                    <label for="number">Number: </label>
+                    <input type="number" name="number" id="number" placeholder="Digite um número" min="10" max="100" step="5">
+                </p>
+                
+                <p>
+                    <label for="password">Senha: </label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                </p>
+                <p>
+                    <label for="range">Range: </label>
+                    <input type="range" name="range" id="range" list="tickmarks" step="25">
+
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%">
+                        <option value="25">
+                        <option value="50" label="50%">
+                        <option value="75">
+                        <option value="100" label="100%">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="url">Sua url: </label>
+                    <input type="url" name="url" id="url" placeholder="URL">
+                </p>
+                <p>
+                    <label for="search">Search: </label>
+                    <input type="search" name="search" id="search" placeholder="Pesquisa">
+                </p>
+
+                <p>
+                    <label for="select">Estado:</label>
+                    <select name="select" id="select">
+                        <optgroup label="Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="tex">Text Area: </label><br>
+                    <textarea name="textarea" id="textarea" cols="25" rows="5"></textarea>
+                </p>
+
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Enviar</button>
+                </p>
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

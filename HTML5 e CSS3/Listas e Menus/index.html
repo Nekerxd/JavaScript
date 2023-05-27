@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Listas e Menus</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 20px;
+            }
+    
+            nav ul{
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                background: rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+            
+            nav ul li{
+                margin: 0;
+                padding: 15px;
+            }
+            
+            nav li:hover{
+                background: rgba(0, 0, 0, 0.5);
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: white;
+            }
+
+            div {
+                width: 350px;
+                margin: 50px;
+                background: rgb(215, 215, 215);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="one">
+                <h2>Lista não ordenada</h2>
+                <ul>
+                    <li>Café</li>
+                    <li>Chá</li>
+                    <li>Leite</li>
+                  </ul> 
+            </div>
+            <div class="two">
+                <h2>Lista Ordenada</h2>
+                <ol>
+                    <li>Café</li>
+                    <li>Chá</li>
+                    <li>Leite</li>
+                </ol>
+            </div>
+
+            <div class="three">
+                <h2>Lista de descrição</h2>
+                <dl>
+                    <dt>Café</dt>
+                    <dd>- bebida quente escura</dd>
+                    <dt>Leite</dt>
+                    <dd>- bebida branca gelada</dd>
+                </dl>
+            </div>
+        </section>
+    </body>
+</html>
