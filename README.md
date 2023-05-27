@@ -7,7 +7,7 @@
 
 📌Tópicos a serem estudados:
 
-- [ ] Configurando o ambiente no Windows e Linux.
+- ✅ Configurando o ambiente no Windows e Linux.
 - [ ] HTML5 e CSS3.
 - [ ] Landing Page com HTML5 e CSS3.
 - [ ] JavaScript Básico.
