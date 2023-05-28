@@ -1,0 +1,38 @@
+/*
+Especificidade(ID, Classes Atributos e Pseudo-classes, Elementos e Pseudo-elementos)
+*/
+
+/* Specificity(0,0,1) */
+p{
+    background: orange;
+}
+
+/* Specificity(0,1,0) */
+.p {
+    background: yellow;
+}
+
+/* Specificity(1,0,0) */
+#p {
+    background: red;
+}
+
+/* Specificity(1,0,1) */
+p#p{
+    background: green;
+}
+
+/* Specificity(1,1,0) */
+#p.p {
+    background: blue;
+}
+
+/* Specificity(1,1,1) */
+p#p.p {
+    background: purple;
+}
+
+/* Specificity(0,0,1) com !important */
+p {
+    background: pink !important;
+}
