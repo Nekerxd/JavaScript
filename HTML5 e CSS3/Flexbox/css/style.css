@@ -7,22 +7,69 @@
 .flex-container {
     display: flex;
     /* flex-direction row eixo principal na horizontal e column na vertical */
-    flex-direction: column;
+    /* flex-direction: row; */
     /* eixo principal */
-    justify-content: center;
+    justify-content: space-between;
     /* eixo perpendicular */
-    align-items: center;
+    align-items: flex-start;
     /* Permite quebra em falta de espaço*/
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
     background: lightskyblue;
-    height: 640px
+    height: 800px;
 }
 
 .flex-item {
-    width: 33.33%;
+    /* Permite aumentar */
+    /* flex-grow: 1; */
+    /* Distribui antes de aumentar */
+    /* flex-basis: 320px; */
+    /* Permite encolher */
+    /* flex-shrink: 0; */
+    /* flex: 1 0 320px; */
+    margin: 10px;
     background: lightcoral;
 }
 
-.flex-item:nth-child(3) {
-    font-size: 30px;
+.flex-item:nth-child(2) {
+    align-self: flex-start;
+    order: -1;
+}
+.flex-item:nth-child(4) {
+    order: 1;
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+body {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns .col {
+    display: flex;
+    flex-direction: column;
+    
+    background: lightblue;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .img {
+    flex: 1 0 20%;
+    height: 50px;
+    background: green;
+    margin: 10px;
 }

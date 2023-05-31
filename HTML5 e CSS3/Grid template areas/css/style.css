@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'navegacao conteudo'
+    'rodape rodape';
+}
+
+.grid div:nth-child(1) {
+    background: red;
+    padding: 5px;
+    grid-area: cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid div:nth-child(2) {
+    display: flex;
+    background: yellow;
+    grid-area: navegacao;
+
+}
+
+.grid div:nth-child(3) {
+    background: blue;
+    grid-area: conteudo;
+}
+
+.grid div:nth-child(4) {
+    background: green;
+    grid-area: rodape;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'cabecalho'
+        'conteudo'
+        'navegacao'
+        'rodape';
+    }
+}
