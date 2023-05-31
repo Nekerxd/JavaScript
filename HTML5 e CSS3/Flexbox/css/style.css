@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-direction row eixo principal na horizontal e column na vertical */
+    flex-direction: column;
+    /* eixo principal */
+    justify-content: center;
+    /* eixo perpendicular */
+    align-items: center;
+    /* Permite quebra em falta de espaço*/
+    flex-wrap: nowrap;
+    background: lightskyblue;
+    height: 640px
+}
+
+.flex-item {
+    width: 33.33%;
+    background: lightcoral;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 30px;
+}
