@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* VARIÁVEIS */
+/* -------------------- VARIÁVEIS -------------------- */
 
 :root {
     --primary-color: #0A1128;
@@ -10,7 +10,7 @@
     --gap: 3rem;
 }
 
-/* ELEMENTOS */
+/* --------------------ELEMENTOS -------------------- */
 
 * {
     margin: 0;
@@ -26,6 +26,7 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +62,7 @@ a {
     text-decoration: none;
 }
 
-/* MAIN CONTENT */
+/* -------------------- MAIN CONTENT -------------------- */
 
 .main-bg {
     background-image: url(../img/main-background.svg);
@@ -84,7 +85,7 @@ a {
     min-height: 100vh;
 }
 
-/* MENU */
+/* -------------------- MENU -------------------- */
 
 .menu {
     position: fixed;
@@ -93,6 +94,11 @@ a {
     left: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
+}
+
+.menu-spacing {
+    height: 6.5rem;
 }
 
 .menu-content {
@@ -141,4 +147,30 @@ a {
     left: 25%;
 }
 
-/* FIM MENU */
+/* -------------------- INTRO -------------------- */
+
+.intro-content{
+    position: relative;
+    top: -6.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.intro-text-content h2 {
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
