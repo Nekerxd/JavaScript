@@ -15,12 +15,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: white;
 }
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -40,10 +39,13 @@ h1 {
 
 h2 {
     font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h4 {
@@ -62,6 +64,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
 /* -------------------- MAIN CONTENT -------------------- */
 
 .main-bg {
@@ -73,6 +79,7 @@ a {
 
 .white-bg {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
@@ -93,8 +100,8 @@ a {
     right: 0;
     left: 0;
     width: 100%;
-    border-bottom: 0.1rem solid var(--light-gray-color);
     z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
 .menu-spacing {
@@ -111,7 +118,7 @@ a {
 
 .menu h1 {
     font-size: 2.3rem;
-    color:  var(--primary-color);
+    color: var(--primary-color);
 }
 
 .menu h1 a{
@@ -139,7 +146,7 @@ a {
     width: 0;
     height: 0.2rem;
     border-bottom: 0.2rem solid --secondary-color;
-    transition: all 300ms ease-in-out
+    transition: all 300ms ease-in-out;
 }
 
 .menu ul li a:hover::after {
@@ -163,14 +170,24 @@ a {
     justify-content: center;
     flex-flow: column wrap;
 }
-.intro-text-content h2 {
-    font-size: 5.5rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 
 .intro-img img {
     max-width: 100%;
     height: auto;
+}
+
+/* -------------------- Trio de Ouro -------------------- */
+
+.top3-content {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: auto;
+    line-height: 1.2;
+}
+
+.top3-content h3, .top3-content p{
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
