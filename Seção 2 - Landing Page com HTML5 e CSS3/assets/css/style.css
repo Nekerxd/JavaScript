@@ -85,7 +85,7 @@ p {
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 
 .section-size {
@@ -162,7 +162,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -181,13 +181,62 @@ p {
 .top3-content {
     max-width: 80rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    height: auto;
+    min-height: 100vh;
     line-height: 1.2;
 }
 
 .top3-content h3, .top3-content p{
     margin-bottom: 1.5rem;
     text-align: justify;
+}
+
+/* -------------------- Complementos -------------------- */
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 6rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    margin: auto 0;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3.8rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.grid-one-content .grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
