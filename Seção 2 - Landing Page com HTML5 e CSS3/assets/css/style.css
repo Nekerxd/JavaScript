@@ -385,3 +385,23 @@ thead th {
 .form-group ::placeholder {
     color: var(--light-gray-color);
 }
+
+/* -------------------- Footer -------------------- */
+
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.heart {
+    color: var(--secondary-color);
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
