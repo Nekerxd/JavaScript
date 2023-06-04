@@ -202,11 +202,11 @@ p {
     min-height: 100vh;
 }
 
-.grid-main-heading {
+.grid-one .grid-main-heading {
     margin-bottom: 1rem;
 }
 
-.grid-description {
+.grid-one .grid-description {
     padding-bottom: 6rem;
 }
 
@@ -259,3 +259,21 @@ p {
     transform: translate(-3%, 3%) scale(1.1) rotate(3deg);    
 }
 
+/* -------------------- Frontend-Backend -------------------- */
+
+.frontback-content {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.2;
+}
+
+.frontback-content h3, .frontback-content p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.frontback-content h2{
+    margin-bottom: 1rem;
+}
