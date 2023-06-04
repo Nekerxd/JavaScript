@@ -277,3 +277,40 @@ p {
 .frontback-content h2{
     margin-bottom: 1rem;
 }
+
+/* -------------------- Particulars -------------------- */
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+table td, table th {
+    padding: 1.2rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, thead th {
+    background-color: var(--light-gray-color);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+
+}
