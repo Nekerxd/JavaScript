@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: #0A1128;
-    --secondary-color: crimson;
+    --secondary-color: #dc143c;
     --white-color: #fff;
     --light-gray-color: #eee;
     --gap: 3rem;
@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -159,7 +160,6 @@ p {
 
 .intro-content{
     position: relative;
-    top: -6.5rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -221,8 +221,7 @@ p {
     font-size: 3rem;
     position: relative;
     padding-left: 5rem;
-    padding-bottom: 3rem;
-    margin: auto 0;
+    padding-bottom: 2rem;
 }
 
 .grid h3::before {
@@ -236,7 +235,7 @@ p {
     transform: rotate(5deg);
 }
 
-.grid-one-content .grid .grid-item {
+.grid-one-content .grid-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -293,19 +292,22 @@ table caption{
     margin-bottom: 1rem;
 }
 
-table td, table th {
+table td,
+table th {
     padding: 0.5rem;
     text-align: left;
     border: 0.1rem solid var(--light-gray-color);
 }
 
-table td, table th {
+table td,
+table th {
     padding: 1.2rem;
     text-align: left;
     border: 0.1rem solid var(--light-gray-color);
 }
 
-tfoot td, thead th {
+tfoot td,
+thead th {
     background-color: var(--light-gray-color);
 }
 
@@ -313,4 +315,73 @@ tfoot td, thead th {
     overflow: hidden;
     overflow-x: auto;
 
+}
+
+/* -------------------- Contact -------------------- */
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    /* grow shrink basis */
+    flex: 1 1 32rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 1rem 0.2rem var(--secondary-color);
+
+}
+
+.full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: var(--light-gray-color);
 }

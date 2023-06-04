@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Landing Page</title>
 </head>
-<body class="main-bg">
+<body>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1><a href="#intro">LOGO</a></h1>
@@ -19,7 +19,7 @@
                     <li><a href="#gallery">Galeria</a></li>
                     <li><a href="#frontend-backend">Frontend e Backend</a></li>
                     <li><a href="#particulars">Características</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,14 +33,12 @@
             <div class="intro-text-content">
                 <h2>Explorando as Bases da Web Moderna</h2>
                 <p>Nos bastidores de todas as páginas da web interativas e visualmente atraentes que encontramos atualmente, existem três tecnologias fundamentais: HTML5, CSS3 e JavaScript. Cada uma desempenhando um papel crucial na criação de experiências web envolventes.</p>
+            </div>
+
+            <div class="intro-img">
+                <img src="assets/img/intro.svg" alt="Logo de HTML, CSS e JavaScript.">
+            </div>
         </div>
-
-        <div class="intro-img">
-            <img src="assets/img/intro.svg" alt="Logo de HTML, CSS e JavaScript.">
-        </div>
-
-    </div>
-
     </section>
 
     <section id="top3" class="white-bg section-size">
@@ -60,6 +58,7 @@
                 O CSS3 é a versão mais recente do CSS, uma linguagem de estilo utilizada para definir a aparência e o layout das páginas da web escritas em HTML. Com o CSS3, os desenvolvedores podem controlar o posicionamento dos elementos na página, definir cores, fontes, tamanhos e adicionar efeitos visuais.
 
             </p>
+
             <h3>JavaScript</h3>
             <p>
                 JavaScript é uma linguagem de programação amplamente usada para tornar as páginas da web interativas e dinâmicas. Com o JavaScript, é possível adicionar recursos como animações, validações de formulário, interações com o usuário e muito mais. Ele permite que os desenvolvedores manipulem o conteúdo e o comportamento das páginas da web, respondendo a eventos e interagindo com os elementos HTML e CSS.
@@ -71,8 +70,8 @@
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Tecnologias Complementares</h2>
             <p class="grid-description"> Além do HTML, CSS e JavaScript, existem outras tecnologias que podem ser utilizadas em conjunto para aprimorar e expandir as capacidades dessas linguagens. Complementares a essas tecnologias principais, essas ferramentas oferecem recursos adicionais e soluções específicas para diferentes necessidades de desenvolvimento web.</p>
-            <div class="grid">
 
+            <div class="grid">
                 <article class="grid-item">
                     <h3>Scalable Vector Graphics (SVG)</h3>
                     <p>
@@ -86,6 +85,7 @@
                         São preprocessadores de CSS que adicionam recursos poderosos ao CSS tradicional, como variáveis, mixins e funções, facilitando a escrita e a organização do código CSS.
                     </p>
                 </article>
+
                 <article class="grid-item">
                     <h3>TypeScript</h3>
                     <p>
@@ -100,6 +100,7 @@
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Galeria</h2>
             <p class="grid-description"> Exemplo Descrição.</p>
+
             <div class="grid">
 
                 <div class="gallery-img">
@@ -132,11 +133,13 @@
             <p>
                 Descubra a harmonia perfeita entre o frontend e o backend, onde o cliente e o servidor se unem para criar experiências incríveis explorando a interação entre essas camadas essenciais e como elas trabalham em conjunto para entregar conteúdo e funcionalidades de maneira eficiente.
             </p>
+
             <h3>Frontend</h3>
             <p>
                 No desenvolvimento frontend, o HTML desempenha um papel fundamental ao fornecer a estrutura e a organização do conteúdo de uma página web. Ele define os elementos hierárquicos, como cabeçalhos, parágrafos, imagens e links, criando a base para a apresentação do conteúdo aos usuários. Em conjunto com o CSS, o HTML permite estilizar os elementos, definir layouts e criar uma experiência visual agradável. Além disso, o JavaScript traz interatividade à página, permitindo a manipulação de elementos, validação de formulários, animações e a comunicação com servidores.
 
             </p>
+
             <h3>Backend</h3>
             <p>
                 No backend, o JavaScript também tem seu lugar. Com o ambiente de execução Node.js, é possível utilizar o JavaScript no servidor, permitindo a construção de aplicativos de backend de forma coesa. O Node.js oferece um ambiente completo para executar código JavaScript no backend, permitindo lidar com solicitações de clientes, manipular bancos de dados, criar APIs e realizar outras tarefas típicas do backend. Assim, o JavaScript pode ser utilizado tanto no frontend quanto no backend, proporcionando uma experiência de desenvolvimento mais unificada e permitindo o compartilhamento de código entre as camadas.
@@ -186,8 +189,49 @@
                     <tfoot><tr><td colspan="3"></td></tr></tfoot>
                 </table>
             </div>
+        </div>
+    </section>
 
+    <section id="contact" class="intro main-bg section-size">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Entre em contato</h2>
+                <p>Quero ouvir você! Se você tiver alguma pergunta, comentário, sugestão ou desejar obter mais informações sobre, não hesite em entrar em contato comigo.</p>
+            </div>
+
+            <div class="intro-img">
+                <img src="assets/img/contact-us.svg" alt="Logo de HTML, CSS e JavaScript.">
+            </div>
             
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Formulário de contato</legend>
+
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Insira sua mensagem"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </div>
         </div>
     </section>
 </body>
