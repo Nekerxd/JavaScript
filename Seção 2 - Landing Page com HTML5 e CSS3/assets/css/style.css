@@ -425,11 +425,29 @@ thead th {
 /* -------------------- Media Queries -------------------- */
 
 @media (max-width: 800px) {
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text-content p,
+    .frontback-content p,
+    .top3-content p{
+        text-align: left;
+    }
+
     .intro-content,
     .grid {
         grid-template-columns: 1fr;
     }
-
+    #contact .intro-content {
+        grid-template-columns: 60% 40%;
+    }
+    
     .gallery-img {
         width: 100%;
         max-width: 100%;
