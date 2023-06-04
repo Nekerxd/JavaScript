@@ -29,7 +29,7 @@ body{
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1.2;
@@ -47,18 +47,6 @@ h2 {
 
 h3 {
     font-size: 4rem;
-}
-
-h4 {
-    font-size: 4.5rem;
-}
-
-h5 {
-    font-size: 4rem;
-}
-
-h6 {
-    font-size: 3.5rem;
 }
 
 a {
@@ -166,10 +154,15 @@ p {
     min-height: 100vh;
 }
 
-.intro-text-content, .intro-img {
+.intro-text-content,
+.intro-img {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+}
+
+.intro-text-content p {
+    text-align: justify;
 }
 
 .intro-img img {
@@ -188,7 +181,8 @@ p {
     line-height: 1.2;
 }
 
-.top3-content h3, .top3-content p{
+.top3-content h3,
+.top3-content p{
     margin-bottom: 1.5rem;
     text-align: justify;
 }
@@ -269,7 +263,8 @@ p {
     line-height: 1.2;
 }
 
-.frontback-content h3, .frontback-content p{
+.frontback-content h3,
+.frontback-content p{
     margin-bottom: 2rem;
     text-align: justify;
 }
@@ -430,7 +425,8 @@ thead th {
 /* -------------------- Media Queries -------------------- */
 
 @media (max-width: 800px) {
-    .intro-content, .grid {
+    .intro-content,
+    .grid {
         grid-template-columns: 1fr;
     }
 
@@ -453,7 +449,8 @@ thead th {
         text-align: center;
     }
 
-    .menu-content, .menu-content ul {
+    .menu-content,
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
