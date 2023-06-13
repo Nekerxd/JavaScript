@@ -1,25 +1,35 @@
 function main() {
 
-    const form = document.querySelector('.form');
+    const form = document.querySelector('#form');
         
     form.addEventListener('submit', calculaIMC);
 
     function calculaIMC(e) {
         e.preventDefault();
         
-        const peso = form.querySelector(".peso");
-        const altura = form.querySelector(".altura");
+        const peso = form.querySelector('#peso');
+        // const peso = e.target.querySelector('#peso')
+        const altura = form.querySelector('#altura');
+        // const altura = e.target.querySelector('#altura');
         
         const resultadoIMC = (peso.value / (altura.value ** 2));
         
-        resultNivel = classificaIMC(resultadoIMC);
+        resultGrau = classificaIMC(resultadoIMC);
 
-        defineMensagem(resultadoIMC, resultNivel);
+        defineMensagem(resultadoIMC, resultGrau);
     };
 
     function defineMensagem(imcCalculado, nivelCalculado) {
-        const resultado = document.querySelector(".resultado");
+        const resultado = document.querySelector("#resultado");
         resultado.innerHTML =  `<h3><b>Seu IMC é ${imcCalculado.toFixed(2)} (${nivelCalculado})</b></h3>`;
+
+        /*  Alternativa de código
+
+            const div = document.createElement('div');
+            div.innerHTML = 'Qualquer coisa';
+            div.classList.add('resultado');
+            resultado.appendChild(div);
+        */
     };
 
     function classificaIMC(imc) {

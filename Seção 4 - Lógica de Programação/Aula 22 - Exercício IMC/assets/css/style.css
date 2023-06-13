@@ -27,11 +27,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3 {
-  padding: 2.5rem 0;
-  font-size: 2rem;
-}
-
 .container {
   max-width: 60rem;
   margin: 5rem auto;
@@ -85,7 +80,10 @@ form button:hover {
 }
 
 .resultado {
-  background-color: lightgreen;
-  border-radius: 1rem;
+  font-size: 2rem;
   text-align: center;
+  font-weight: bold;
+  padding: 2.5rem 0;
+  border-radius: 1rem;
+  background-color: lightgreen;
 }
