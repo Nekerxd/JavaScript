@@ -11,7 +11,7 @@
 - ✅ HTML5 e CSS3.
 - ✅ Landing Page com HTML5 e CSS3.
 - ✅ JavaScript Básico.
-- [ ] JavaScript - Lógica de programação.
+- ✅ JavaScript - Lógica de programação.
 - [ ] JavaScript Funções.
 - [ ] JavaScript Arrays.
 - [ ] JavaScript Objetos e prototypes.
