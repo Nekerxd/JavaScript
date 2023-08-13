@@ -12,7 +12,7 @@
 - ✅ Landing Page com HTML5 e CSS3.
 - ✅ JavaScript Básico.
 - ✅ JavaScript - Lógica de programação.
-- [ ] JavaScript Funções.
+- ✅ JavaScript Funções.
 - [ ] JavaScript Arrays.
 - [ ] JavaScript Objetos e prototypes.
 - [ ] JavaScript Classes - Programação Orientada a Objetos (POO).
