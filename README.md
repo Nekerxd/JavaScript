@@ -13,7 +13,7 @@
 - ✅ JavaScript Básico.
 - ✅ JavaScript - Lógica de programação.
 - ✅ JavaScript Funções.
-- [ ] JavaScript Arrays.
+- ✅ JavaScript Arrays.
 - [ ] JavaScript Objetos e prototypes.
 - [ ] JavaScript Classes - Programação Orientada a Objetos (POO).
 - [ ] JavaScript assíncrono - Promises, Ajax, Fetch e Async/Await.
