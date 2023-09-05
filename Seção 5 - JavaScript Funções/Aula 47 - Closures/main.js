@@ -1,5 +1,5 @@
 // Closure é a habilidade da função acessar o seu escopo léxico
-function retornaFuncao() {
+function retornaFuncao(nome) {
     return function() {
         return nome;
     }
