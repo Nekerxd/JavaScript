@@ -5,25 +5,22 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    let substring = [];
-    let temp = 0
-    let count = 0;
+    let substring = new Set();
+    let deleted = 0
+    let maxSize = 0;
 
     if (s.length === 0) return 0;
     if (s.length === 1) return 1;
 
     for (let i = 0; i < s.length; i++) {
-        if (substring.includes(s[i])){
-            if (temp > count) count = temp;
-            temp = 1;
-            substring = [s[i]];
-        } else {
-            substring.push(s[i]);
-            temp++;
+        while (substring.has(s[i])){
+            substring.delete(s[deleted]);
+            deleted++;
         }
+        substring.add(s[i]);
+        maxSize = Math.max(maxSize, i - deleted + 1);
     }
-    if (temp > count) count = temp;
-    return count;
+    return maxSize;
 };
 
-console.log(lengthOfLongestSubstring("dvdf"));
+console.log(lengthOfLongestSubstring("ABCDEFGABEF"));
