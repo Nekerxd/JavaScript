@@ -2,6 +2,12 @@
 // The returned array should be created such that returnedArray[i] = fn(arr[i], i).
 // Please solve it without the built-in Array.map method.
 
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+
 var map = function(arr, fn) {
     let mappedArr = [];
     for (let i = 0; i < arr.length; i++) {
